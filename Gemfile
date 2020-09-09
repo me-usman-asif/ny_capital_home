@@ -18,3 +18,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+gem 'active_model_serializers'
+gem 'api-pagination'
+gem 'awesome_print'
+gem 'will_paginate'
