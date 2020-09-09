@@ -31,6 +31,10 @@ class ProjectsController < ApplicationController
     @project.destroy
   end
 
+  def search
+    paginate json: Project.apply_filters(params)
+  end
+
   private
     def set_project
       @project = Project.find(params[:id])
